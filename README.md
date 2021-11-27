@@ -1,6 +1,6 @@
 # MyReads Project
 
-This is a Book Tracking App.
+This is a Book Tracking App. It help you to categorise your favorite books based on 3 different shelves: "Currently Reading", "Want To Read" and "Read"
 
 To get started with setting up to run the project
 
