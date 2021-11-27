@@ -6,7 +6,7 @@ const OpenSearch = () => {
 
   return (
     <div className="open-search">
-      <button onClick={() => history.push("/search-books")}>Add a book</button>
+      <button onClick={() => history.push("/search")}>Add a book</button>
     </div>
   );
 };

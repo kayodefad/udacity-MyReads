@@ -46,7 +46,7 @@ const BooksApp = () => {
       />
       <Switch>
         <Route
-          path="/search-books"
+          path="/search"
           render={props => <SearchBooks getAllBooks={getAllBooks} {...props} />}
         />
         <Route
