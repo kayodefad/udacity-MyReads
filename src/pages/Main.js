@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import CurrentlyReading from "../components/CurrentlyReading";
 import WantToRead from "../components/WantToRead";
 import Read from "../components/Read";
 import OpenSearch from "../components/OpenSearch";
-import PropTypes from "prop-types";
 
 const Main = props => {
   const { currentlyReading, wantToRead, read, getAllBooks } = props;

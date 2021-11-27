@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+
+import * as BooksAPI from "../BooksAPI";
 import SearchBooksBar from "../components/SearchBooksBar";
 import SearchBooksResults from "../components/SearchBooksResults";
-import * as BooksAPI from "../BooksAPI";
-import PropTypes from "prop-types";
 
 const SearchBooks = props => {
   const { getAllBooks } = props;

@@ -1,6 +1,7 @@
 import React from "react";
-import BookList from "./BookList";
 import PropTypes from "prop-types";
+
+import BookList from "./BookList";
 
 const CurrentlyReading = props => {
   const { currentlyReading, getAllBooks } = props;

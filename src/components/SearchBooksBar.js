@@ -1,7 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import SearchBooksInput from "./SearchBooksInput";
 import PropTypes from "prop-types";
+
+import SearchBooksInput from "./SearchBooksInput";
 
 const SearchBooksBar = props => {
   const { onInputChange } = props;
