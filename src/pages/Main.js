@@ -1,13 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import CurrentlyReading from "../components/CurrentlyReading";
-import WantToRead from "../components/WantToRead";
-import Read from "../components/Read";
 import OpenSearch from "../components/OpenSearch";
+import Shelf from "../components/Shelf";
 
 const Main = props => {
   const { currentlyReading, wantToRead, read, getAllBooks } = props;
+
+  const shelves = [
+    {
+      title: "Currently Reading",
+      key: "currentlyReading",
+      data: currentlyReading,
+    },
+    { title: "Want To Read", key: "wantToRead", data: wantToRead },
+    { title: "Read", key: "read", data: read },
+  ];
 
   return (
     <div className="list-books">
@@ -16,12 +24,9 @@ const Main = props => {
       </div>
       <div className="list-books-content">
         <div>
-          <CurrentlyReading
-            currentlyReading={currentlyReading}
-            getAllBooks={getAllBooks}
-          />
-          <WantToRead wantToRead={wantToRead} getAllBooks={getAllBooks} />
-          <Read read={read} getAllBooks={getAllBooks} />
+          {shelves.map(shelf => (
+            <Shelf key={shelf.key} shelf={shelf} getAllBooks={getAllBooks} />
+          ))}
         </div>
       </div>
       <OpenSearch />

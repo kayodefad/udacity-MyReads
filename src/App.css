@@ -215,3 +215,24 @@ button:active {
   padding: 0.4rem 1rem;
   color: #fff;
 }
+
+.no-match {
+  background: #041927;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+.no-match div {
+  background: #fff;
+  width: 90vw;
+  max-width: 400px;
+  padding: 0 20px 20px 20px;
+  border-radius: 10px;
+}

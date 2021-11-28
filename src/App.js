@@ -6,6 +6,7 @@ import "./App.css";
 import * as BooksAPI from "./BooksAPI";
 import Main from "./pages/Main";
 import SearchBooks from "./pages/SearchBooks";
+import NoMatch from "./components/NoMatch";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -51,6 +52,7 @@ const BooksApp = () => {
         />
         <Route
           path="/"
+          exact
           render={props => (
             <Main
               currentlyReading={currentlyReading}
@@ -61,6 +63,7 @@ const BooksApp = () => {
             />
           )}
         />
+        <Route component={NoMatch} />
       </Switch>
     </div>
   );
